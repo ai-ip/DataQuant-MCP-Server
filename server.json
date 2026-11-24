@@ -1,0 +1,1 @@
+{"$schema":"https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json","description":"Six-market financial data (A/US/HK stocks, crypto, indices, ETFs): symbols, klines, macro.","name":"trade.dataquant/dataquant","remotes":[{"type":"streamable-http","url":"https://mcp.dataquant.trade/mcp"}],"version":"1.0.0"}

@@ -1,0 +1,11 @@
+name = "dataquant-mcp"
+main = "src/index.ts"
+compatibility_date = "2025-11-01"
+
+# 部署后把 mcp.dataquant.trade 解析到本 Worker（Cloudflare 后台加 custom domain 即自动配 DNS）
+routes = [{ pattern = "mcp.dataquant.trade", custom_domain = true }]
+
+[vars]
+DQ_API_BASE = "https://api.dataquant.trade"
+# DQ_API_KEY 不要写在这里：用 `wrangler secret put DQ_API_KEY` 设置
+# OPENAI_CHALLENGE_TOKEN 在 ChatGPT 门户生成验证 token 后，同样用 secret 或 vars 填入
